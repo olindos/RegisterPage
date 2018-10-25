@@ -12,7 +12,7 @@ ru:
   devise:
     registrations:
       new:
-        title: "Регистрация"
+        Registration: "Регистрация"
         buttom: "Готово"
   registration:
     index:
