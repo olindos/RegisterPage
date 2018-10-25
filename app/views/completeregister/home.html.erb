@@ -1,0 +1,4 @@
+<h1> Привет, <%= current_user.first_name %>! </h1>
+<p>Поздавляем вы успешно зарегистрированы!!!</p> </br>
+
+<%= link_to (t '.logout_buttom'), destroy_user_session_path, method: :delete %>
