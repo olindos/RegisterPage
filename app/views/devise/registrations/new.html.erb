@@ -1,29 +1,13 @@
-<h2>Sign up</h2>
+<h2><%= t '.title' %></h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name, html: { class: 'form-inline' })) do |f| %>
+<%= f.error_notification %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
+  <%= f.input :nickname, autofocus: true, label: 'Никнейм:', class: 'required letterfirstonly' %>
+  <%= f.input :first_name, autofocus: true, label: 'Имя:', class: 'rulettersonly' %>
+  <%= f.input :last_name, autofocus: true, label: 'Фамилия:', class: 'rulettersonly' %>
+  <%= f.input :email, autofocus: true, label: 'Электронная почта:', class: 'required email' %>
+  <%= f.input :password, autofocus: true, autocomplete: "off", label: 'Пароль:', class: 'required minlength' %>
+  <%= f.button :submit, 'Готово' %>       
+    
 <% end %>
-
-<%= render "devise/shared/links" %>
