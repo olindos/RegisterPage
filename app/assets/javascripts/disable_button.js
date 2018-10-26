@@ -5,10 +5,10 @@ function checkParams() {
   var last_name = $('#user_last_name').val();
   var password = $('#user_password').val();
   
-  if(nickname.length != 0 && email.length != 0 && first_name.length != 0 && last_name.length != 0 && password.length >= 5) {
+  if(nickname.val && email.val && first_name.val && last_name.val && password.length >= 5) {
     $('#submit').removeAttr('disabled');
   } else {
     $('#submit').attr('disabled', 'disabled');
   }
-console.log
+
 }

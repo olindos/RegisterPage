@@ -8,6 +8,6 @@
   <%= f.input :last_name, autofocus: true, label: 'Фамилия:', class: 'rulettersonly', onkeyup: "checkParams()" %>
   <%= f.input :email, autofocus: true, label: 'Электронная почта:', class: 'required email', onkeyup: "checkParams()" %>
   <%= f.input :password, autofocus: true, autocomplete: "off", label: 'Пароль:', class: 'required minlength', onkeyup: "checkParams()" %>
-  <%= f.button :submit, 'Готово', id: 'submit' %>       
+  <%= f.button :submit, 'Готово', id: 'submit', disabled: true %>       
     
 <% end %>
