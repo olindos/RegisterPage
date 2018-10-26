@@ -4,10 +4,10 @@
 <%= f.error_notification %>
 
   <%= f.input :nickname, autofocus: true, label: 'Никнейм:', class: 'required letterfirstonly', onkeyup: "checkParams()" %>
-  <%= f.input :first_name, autofocus: true, label: 'Имя:', class: 'rulettersonly' %>
-  <%= f.input :last_name, autofocus: true, label: 'Фамилия:', class: 'rulettersonly' %>
-  <%= f.input :email, autofocus: true, label: 'Электронная почта:', class: 'required email' %>
-  <%= f.input :password, autofocus: true, autocomplete: "off", label: 'Пароль:', class: 'required minlength' %>
-  <%= f.button :submit, 'Готово' %>       
+  <%= f.input :first_name, autofocus: true, label: 'Имя:', class: 'rulettersonly', onkeyup: "checkParams()" %>
+  <%= f.input :last_name, autofocus: true, label: 'Фамилия:', class: 'rulettersonly', onkeyup: "checkParams()" %>
+  <%= f.input :email, autofocus: true, label: 'Электронная почта:', class: 'required email', onkeyup: "checkParams()" %>
+  <%= f.input :password, autofocus: true, autocomplete: "off", label: 'Пароль:', class: 'required minlength', onkeyup: "checkParams()" %>
+  <%= f.button :submit, 'Готово', id: 'submit' %>       
     
 <% end %>
