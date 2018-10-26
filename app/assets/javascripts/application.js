@@ -18,4 +18,5 @@
 //= require turbolinks
 //= require jquery.validate
 //= require jquery.validate.additional-methods
-//= require_tree .
+//= require user_validation
+//= require disable_button

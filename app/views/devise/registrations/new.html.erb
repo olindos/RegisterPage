@@ -1,9 +1,9 @@
-<h2> Registration </h2>
+<h2> Регистрация </h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name, html: { class: 'form-inline' })) do |f| %>
 <%= f.error_notification %>
 
-  <%= f.input :nickname, autofocus: true, label: 'Никнейм:', class: 'required letterfirstonly' %>
+  <%= f.input :nickname, autofocus: true, label: 'Никнейм:', class: 'required letterfirstonly', onkeyup: "checkParams()" %>
   <%= f.input :first_name, autofocus: true, label: 'Имя:', class: 'rulettersonly' %>
   <%= f.input :last_name, autofocus: true, label: 'Фамилия:', class: 'rulettersonly' %>
   <%= f.input :email, autofocus: true, label: 'Электронная почта:', class: 'required email' %>
