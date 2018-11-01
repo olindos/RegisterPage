@@ -20,4 +20,5 @@
 //= require jquery.validate.additional-methods
 //= require user_validation
 //= require disable_button
-//= require ajax_signup
+//= require ajax_email
+//= require ajax_nickname
