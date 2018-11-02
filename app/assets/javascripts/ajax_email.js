@@ -3,8 +3,8 @@ $(document).ready(function(){
       $.post('/check_email', 
          {"email": $('#user_email').val()}, 
          function(data){
-             if(data.email == "found"){
-                 error('email already in use');
+             if(data.email == "email"){
+                 $message =('email already in use');
              }
          }, 'json');
   });
