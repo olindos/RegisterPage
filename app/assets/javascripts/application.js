@@ -10,7 +10,15 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery3
+//= require jquery
+//= require popper
+//= require bootstrap-sprockets
 //= require rails-ujs
-//= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require jquery.validate
+//= require jquery.validate.additional-methods
+//= require user_validation
+//= require disable_button
+//= require ajax_email
+//= require ajax_nickname
