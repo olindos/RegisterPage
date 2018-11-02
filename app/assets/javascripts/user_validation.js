@@ -61,6 +61,6 @@ $(document).ready(function() {
         $("#response").html(error);
       }
     },
-    onkeyup: true
+    onkeyup: function(element) {$(element).valid()}
   })
 })
