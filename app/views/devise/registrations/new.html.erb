@@ -3,11 +3,11 @@
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name, html: { class: 'form-inline' })) do |f| %>
 <%= f.error_notification %>
 
-  <%= f.input :nickname, autofocus: true, label: 'Никнейм:', class: 'required letterfirstonly' %>
-  <%= f.input :first_name, autofocus: true, label: 'Имя:', class: 'rulettersonly' %>
-  <%= f.input :last_name, autofocus: true, label: 'Фамилия:', class: 'rulettersonly' %>
-  <%= f.input :email, autofocus: true, label: 'Электронная почта:', class: 'required email' %>
-  <%= f.input :password, autofocus: true, autocomplete: "off", label: 'Пароль:', class: 'required minlength' %>
+  <%= f.input :nickname, label: 'Никнейм:', class: 'required letterfirstonly' %>
+  <%= f.input :first_name, label: 'Имя:', class: 'rulettersonly' %>
+  <%= f.input :last_name, label: 'Фамилия:', class: 'rulettersonly' %>
+  <%= f.input :email, label: 'Электронная почта:', class: 'required email' %>
+  <%= f.input :password, autocomplete: "off", label: 'Пароль:', class: 'required minlength' %>
   <%= f.button :submit, 'Готово', id: 'submit' %>       
     
 <% end %>
